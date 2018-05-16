@@ -10,7 +10,10 @@ import UIKit
 
 class CurrencyTextField: UITextField {
     
-    let currencySymbol : String! = "$"
+    /**
+     Set this variable accordint to your desired currency symbol
+     */
+    var currencySymbol : String! = "$"
     
     // MARK: - init functions
     
@@ -23,10 +26,10 @@ class CurrencyTextField: UITextField {
         super.init(coder: aDecoder)
         initTextField()
     }
-    
+    /**
+     This method will initialize the UITextField
+     */
     func initTextField(){
-       
-        
         self.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     @objc func textFieldDidChange(_ textField: UITextField) {
@@ -37,6 +40,8 @@ class CurrencyTextField: UITextField {
     }
     
 }
+
+
 
 extension String {
     var numbers: String { return components(separatedBy: Numbers.characterSet.inverted).joined() }
