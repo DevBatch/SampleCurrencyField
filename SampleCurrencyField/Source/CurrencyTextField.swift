@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurrencyTextField: UITextField {
+class CurrencyTextField: UITextField, UITextFieldDelegate {
     
     /**
      Set this variable accordint to your desired currency symbol
@@ -30,13 +30,21 @@ class CurrencyTextField: UITextField {
      This method will initialize the UITextField
      */
     func initTextField(){
+        
+        self.text = currencySymbol + " 0"
         self.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     @objc func textFieldDidChange(_ textField: UITextField) {
         print("text field changed")
+        
         if  let value : Int = text!.integer {
             textField.text = "\(currencySymbol!) \(String(value))"
         }
+        
+    }
+    
+    override func shouldChangeText(in range: UITextRange, replacementText text: String) -> Bool {
+        return true
     }
     
 }

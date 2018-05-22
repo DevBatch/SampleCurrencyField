@@ -26,5 +26,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("Final value is : ",String(textField.text?.integer as! Int))
+    }
 }
 
