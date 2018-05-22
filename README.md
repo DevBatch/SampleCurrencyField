@@ -5,7 +5,7 @@ This text field lets you take input as decimals.It will discard all the characte
 Drag and drop CurrencyTextField in your project and subclass UITextField with this class
 
 ## Usage
-
+```ruby
  @IBOutlet weak var textField: CurrencyTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,3 +20,7 @@ Drag and drop CurrencyTextField in your project and subclass UITextField with th
    func textFieldDidEndEditing(_ textField: UITextField) {
         print("Final value is : ",String(textField.text?.integer as! Int))
     }
+```
+## Author
+
+muhammadnayabbutt, nayabbutt1@gmail.com
