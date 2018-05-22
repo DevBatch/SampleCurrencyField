@@ -12,9 +12,12 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var textField: CurrencyTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        textField.currencySymbol = "£"
+        
     }
     
     override func didReceiveMemoryWarning() {
