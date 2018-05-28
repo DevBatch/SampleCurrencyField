@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4957AE1C20BBCAD30097907A /* SampleCurrencyFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4957AE1B20BBCAD30097907A /* SampleCurrencyFieldTests.swift */; };
 		49F31CD920AC5BED00E8BBA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F31CD820AC5BED00E8BBA2 /* AppDelegate.swift */; };
 		49F31CDB20AC5BED00E8BBA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F31CDA20AC5BED00E8BBA2 /* ViewController.swift */; };
 		49F31CDE20AC5BED00E8BBA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F31CDC20AC5BED00E8BBA2 /* Main.storyboard */; };
@@ -15,7 +16,20 @@
 		49F31CEE20AC5C2800E8BBA2 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F31CED20AC5C2700E8BBA2 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4957AE1E20BBCAD30097907A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49F31CCD20AC5BED00E8BBA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49F31CD420AC5BED00E8BBA2;
+			remoteInfo = SampleCurrencyField;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4957AE1920BBCAD30097907A /* SampleCurrencyFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCurrencyFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4957AE1B20BBCAD30097907A /* SampleCurrencyFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCurrencyFieldTests.swift; sourceTree = "<group>"; };
+		4957AE1D20BBCAD30097907A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49F31CD520AC5BED00E8BBA2 /* SampleCurrencyField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCurrencyField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F31CD820AC5BED00E8BBA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49F31CDA20AC5BED00E8BBA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4957AE1620BBCAD30097907A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49F31CD220AC5BED00E8BBA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4957AE1A20BBCAD30097907A /* SampleCurrencyFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				4957AE1B20BBCAD30097907A /* SampleCurrencyFieldTests.swift */,
+				4957AE1D20BBCAD30097907A /* Info.plist */,
+			);
+			path = SampleCurrencyFieldTests;
+			sourceTree = "<group>";
+		};
 		49F31CCC20AC5BED00E8BBA2 = {
 			isa = PBXGroup;
 			children = (
 				49F31CD720AC5BED00E8BBA2 /* SampleCurrencyField */,
+				4957AE1A20BBCAD30097907A /* SampleCurrencyFieldTests */,
 				49F31CD620AC5BED00E8BBA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				49F31CD520AC5BED00E8BBA2 /* SampleCurrencyField.app */,
+				4957AE1920BBCAD30097907A /* SampleCurrencyFieldTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +110,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4957AE1820BBCAD30097907A /* SampleCurrencyFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4957AE2020BBCAD30097907A /* Build configuration list for PBXNativeTarget "SampleCurrencyFieldTests" */;
+			buildPhases = (
+				4957AE1520BBCAD30097907A /* Sources */,
+				4957AE1620BBCAD30097907A /* Frameworks */,
+				4957AE1720BBCAD30097907A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4957AE1F20BBCAD30097907A /* PBXTargetDependency */,
+			);
+			name = SampleCurrencyFieldTests;
+			productName = SampleCurrencyFieldTests;
+			productReference = 4957AE1920BBCAD30097907A /* SampleCurrencyFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		49F31CD420AC5BED00E8BBA2 /* SampleCurrencyField */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49F31CE720AC5BED00E8BBA2 /* Build configuration list for PBXNativeTarget "SampleCurrencyField" */;
@@ -105,6 +155,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "DB MAC MINI";
 				TargetAttributes = {
+					4957AE1820BBCAD30097907A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 49F31CD420AC5BED00E8BBA2;
+					};
 					49F31CD420AC5BED00E8BBA2 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -125,11 +180,19 @@
 			projectRoot = "";
 			targets = (
 				49F31CD420AC5BED00E8BBA2 /* SampleCurrencyField */,
+				4957AE1820BBCAD30097907A /* SampleCurrencyFieldTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4957AE1720BBCAD30097907A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49F31CD320AC5BED00E8BBA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,6 +206,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4957AE1520BBCAD30097907A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4957AE1C20BBCAD30097907A /* SampleCurrencyFieldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49F31CD120AC5BED00E8BBA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,6 +225,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4957AE1F20BBCAD30097907A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49F31CD420AC5BED00E8BBA2 /* SampleCurrencyField */;
+			targetProxy = 4957AE1E20BBCAD30097907A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		49F31CDC20AC5BED00E8BBA2 /* Main.storyboard */ = {
@@ -175,6 +254,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4957AE2120BBCAD30097907A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SampleCurrencyFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Devbatch.SampleCurrencyFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleCurrencyField.app/SampleCurrencyField";
+			};
+			name = Debug;
+		};
+		4957AE2220BBCAD30097907A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SampleCurrencyFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Devbatch.SampleCurrencyFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleCurrencyField.app/SampleCurrencyField";
+			};
+			name = Release;
+		};
 		49F31CE520AC5BED00E8BBA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -313,6 +422,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4957AE2020BBCAD30097907A /* Build configuration list for PBXNativeTarget "SampleCurrencyFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4957AE2120BBCAD30097907A /* Debug */,
+				4957AE2220BBCAD30097907A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49F31CD020AC5BED00E8BBA2 /* Build configuration list for PBXProject "SampleCurrencyField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
